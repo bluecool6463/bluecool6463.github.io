@@ -97,12 +97,12 @@ var circle = function(x, y, xs, ys){
         }
     };
 };
-
+    
 //An array for our circles
 var circleArray = [];
 //Push a few circles into an array (Don't forget to use "new")
 for(var cir = 0; cir < 10; cir ++){
-    circleArray.push(new ellipse(200, 200, random(-2, 2), random(-2, 2)));
+    circleArray.push(new circle(200, 200, Math.random(-2, 2), Math.random(-2, 2)));
 }
 
 //frameRate of 100
@@ -120,7 +120,7 @@ var draw = function() {
 
 //Add new circles when mouse is clicked
 var mouseClicked = function(){
-    circleArray.push(new circle(mouseX, mouseY, random(-2, 2), random(-2, 2)));
+    circleArray.push(new circle(mouseX, mouseY, Math.random(-2, 2), Math.random(-2, 2)));
 };
 }
 </script>
